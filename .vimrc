@@ -1,14 +1,21 @@
 call pathogen#infect()
+call pathogen#helptags()
 syntax on
 set number
 set hlsearch
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set hidden
 filetype plugin indent on
+colorscheme molokai
 
 let g:clang_user_options='|| exit 0'
-let g:clang_debug = 1
+let g:clang_debug = 0
 let g:clang_complete_auto = 1
-let g:clang_complete_copen = 1
-let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
+let g:clang_complete_copen = 0
+let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
 
 
 " Find file in current directory and edit it.
