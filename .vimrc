@@ -1,6 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
+set nocompatible
 set number
 set hlsearch
 set smartindent
@@ -11,11 +12,17 @@ set hidden
 filetype plugin indent on
 colorscheme molokai
 
-let g:clang_user_options='|| exit 0'
-let g:clang_debug = 0
-let g:clang_complete_auto = 1
-let g:clang_complete_copen = 0
-let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
+" let g:clang_user_options='|| exit 0'
+" let g:clang_debug = 0
+" let g:clang_complete_auto = 1
+" let g:clang_complete_copen = 0
+" let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
+
+let g:neocomplete#enable_at_startup = 1
+
+let g:netrw_liststyle = 3
+
+set tags=tags;/
 
 
 " Find file in current directory and edit it.
