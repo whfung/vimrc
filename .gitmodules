@@ -13,3 +13,9 @@
 [submodule "bundle/neocomplete"]
 	path = bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/ctrlspace"]
+	path = bundle/ctrlspace
+	url = https://github.com/szw/vim-ctrlspace.git
