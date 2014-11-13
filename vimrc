@@ -12,15 +12,20 @@ set hidden
 filetype plugin indent on
 colorscheme molokai
 
-" let g:clang_user_options='|| exit 0'
-" let g:clang_debug = 0
-" let g:clang_complete_auto = 1
-" let g:clang_complete_copen = 0
-" let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
+hi CtrlSpaceSelected term=reverse ctermfg=187  ctermbg=23  cterm=bold
+hi CtrlSpaceNormal   term=NONE    ctermfg=244  ctermbg=232 cterm=NONE
+hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
+hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
+
+let g:ctrlspace_use_tabline = 1
+
+let g:clang_user_options='|| exit 0'
+let g:clang_debug = 0
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 0
+let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
 
 let g:neocomplete#enable_at_startup = 1
-
-let g:netrw_liststyle = 3
 
 set tags=tags;/
 
