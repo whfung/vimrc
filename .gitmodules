@@ -4,9 +4,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "bundle/vimerl"]
-	path = bundle/vimerl
-	url = https://github.com/jimenezrick/vimerl.git
 [submodule "bundle/neocomplete"]
 	path = bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
