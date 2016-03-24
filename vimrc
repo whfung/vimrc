@@ -1,5 +1,8 @@
 call pathogen#infect()
 call pathogen#helptags()
+set rtp+=/Users/JonathanFung/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
 syntax on
 set encoding=utf8
 set nocompatible
@@ -23,7 +26,9 @@ hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
 
 let g:ctrlspace_use_tabline = 1
 
-let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
 
 let g:clang_user_options='|| exit 0'
 let g:clang_debug = 0
@@ -33,7 +38,7 @@ let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/
 
 let g:neocomplete#enable_at_startup = 1
 
-set tags=./tags,tags;$HOME
+set tags=./tags,tags,../tags;$HOME
 
 nmap <silent> gl :Limelight!!<CR>
 xmap gl <Plug>(Limelight)

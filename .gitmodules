@@ -31,3 +31,9 @@
 [submodule "bundle/seoul256.vim"]
 	path = bundle/seoul256.vim
 	url = https://github.com/junegunn/seoul256.vim.git
+[submodule "bundle/sbt-vim"]
+	path = bundle/sbt-vim
+	url = https://github.com/ktvoelker/sbt-vim
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
